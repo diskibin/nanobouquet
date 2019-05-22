@@ -1,0 +1,177 @@
+body {
+font-family: Neucha;
+}
+.portfolio {
+color: #6BFFCA;
+}
+.item1 { 
+    grid-area: header; 
+    background-color: #282227;
+    padding: 10px 30px 10px 40px;
+}
+.item2 { 
+    grid-area: main; 
+    width: 80%;
+    margin: auto;
+}
+.grid-container {
+display: grid;
+grid-template-areas:
+    'header'
+    'main';
+grid-gap: 10px;
+}
+
+@media (min-width: 767px){
+.grid:after {
+content: '';
+display: block;
+clear: both;
+}
+.grid-sizer,
+.grid-item {
+position: relative;
+width: 33.333%;
+}
+.grid-item {
+float: left;
+}
+.grid-item img {
+display: block;
+width: 115%;
+}
+.grid-item a {
+display: block;
+width: 90%;
+}
+.menu {
+    display: none;
+}
+#myLinks {
+display: inline;
+}
+.phone {
+float: right;  
+}
+}
+
+@media (max-width: 766px){
+.item2 { 
+    grid-area: main; 
+    width: 100%;
+    margin: auto;
+}
+.grid:after {
+content: '';
+display: block;
+clear: both;
+}
+.grid-sizer,
+.grid-item {
+width: 100%;
+}
+.grid-item {
+float: left;
+}
+.grid-item img {
+display: block;
+width: 115%;
+}
+.grid-item a {
+display: block;
+width: 90%;
+}
+.menu {
+display: block;
+position: absolute;
+right: 0;
+top: 0; 
+}
+
+#myLinks {
+display: none;
+padding: 10px;
+}
+
+#menunav {
+color: white;
+padding: 0;
+text-decoration: none;
+text-align: center;
+font-size: 17px;
+display: block;
+}
+}
+a {
+font-size: 32px;
+line-height: 74px;
+color: #FFFFFF;
+display: inline-block;
+padding: 10px 25px;
+}
+a:hover {
+font-size: 32px;
+line-height: 74px;
+color: #6BFFCA;
+}
+p {
+font-family: Open Sans;
+font-size: 16px;
+line-height: 25px;
+color: #000000;
+}
+.big {
+font-family: Neucha;
+font-size: 26px;
+line-height: 45px;
+}
+.photo {
+float:left;
+margin: 0px 30px 20px 0px;
+}
+.logo {
+padding: 0;
+position: relative;
+top: 5px
+}
+.addition {
+color: #797979;
+}
+input {
+width: 100%;
+border: 1px solid #D96BFF;
+box-sizing: border-box;
+}
+.zv {
+color: #D96BFF;
+}
+.comment {
+width: 100%;
+border: 1px solid #D96BFF;
+box-sizing: border-box;
+}
+.send {
+background: linear-gradient(153.49deg, #55FF9D 0%, #D67FFF 99.98%);
+width: 100%;
+text-align: center;
+border: none;
+font-size: 26px;
+line-height: 40px;
+color: #FFFFFF;
+height: 50px;
+}
+.send:hover {
+background: linear-gradient(0deg, rgba(89, 250, 160, 0.5), rgba(89, 250, 160, 0.5)), linear-gradient(153.49deg, #55FF9D 0%, #D67FFF 99.98%);
+}
+.smallstar {
+position: relative;
+top: -28px;
+left: -30px;
+}
+.bigstar {
+position: relative;
+top: -18px;
+left: -30px;
+}
+
+

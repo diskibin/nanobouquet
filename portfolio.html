@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> NANO bouquet </title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/portfolio.css">
+	<style>
+	@font-face {
+    font-family: Neucha;
+    src: url(fonts/Neucha.ttf);
+	font-weight: regular;
+   	}
+    @font-face {
+    font-family: Open Sans;
+    src: url(fonts/OpenSans.ttf);
+	font-weight: regular;
+   	}
+	</style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <a class='logo' href="index.html"><img src="img/logo.svg"></a>
+            <div id="myLinks">
+                <a id='menunav' class='about' href="about.php">о нас</a>
+                <a id='menunav' class='portfolio' href="portfolio.html">портфолио</a>
+                <a id='menunav' class='contacts' href="contacts.php">контакты</a>
+                <a id='menunav' class='phone' href="tel:79161119099">+7 (916) 111-90-99</a>
+            </div>
+            <a class='menu' href="javascript:void(0);"  onclick="myFunction()"><img width="90%" height="90%" src="img/tripoloski.png"></a>
+        </div>
+        <div class="item2">
+            <br>
+            <div class="grid">
+                <div class="grid-sizer"></div>
+                <div class="grid-item"><a data-fancybox='gallery' href="img/flowers/1.png"><img src="img/flowers/1.png" class='photo'></a></div>
+                <div class="grid-item"><a data-fancybox='gallery' href="img/flowers/2.png"><img src="img/flowers/2.png" class='photo'></a></div>
+                <div class="grid-item"><a data-fancybox='gallery' href="img/flowers/3.png"><img src="img/flowers/3.png" class='photo'></a></div>
+                <div class="grid-item"><a data-fancybox='gallery' href="img/flowers/4.png"><img src="img/flowers/4.png" class='photo'></a></div>
+                <div class="grid-item"><a data-fancybox='gallery' href="img/flowers/5.png"><img src="img/flowers/5.png" class='photo'></a></div>
+                <div class="grid-item"><a data-fancybox='gallery' href="img/flowers/6.png"><img src="img/flowers/6.png" class='photo'></a></div>
+                <div class="grid-item"><a data-fancybox='gallery' href="img/flowers/7.png"><img src="img/flowers/7.png" class='photo'></a></div>
+                <div class="grid-item"><a data-fancybox='gallery' href="img/flowers/8.png"><img src="img/flowers/8.png" class='photo'></a></div>
+                <div class="grid-item"><a data-fancybox='gallery' href="img/flowers/9.png"><img src="img/flowers/9.png" class='photo'></a></div>
+            </div></a>
+        </div>
+    </div>
+</body>
+<script src="isotope.pkgd.min.js"></script>
+<script type="text/javascript">
+window.onload = function() {
+    $(function() {
+        var grid = document.querySelector('.grid');
+        var iso = new Isotope( grid, {
+        itemSelector: '.grid-item',
+        percentPosition: true,
+    });
+        grid.imagesLoaded( function() {
+            grid.isotope('layout');
+        });
+
+    });
+}
+
+$(document).ready(function() {
+    $('[data-fancybox="gallery"]').fancybox({
+        buttons : [ 'close' ],
+        afterLoad : function(instance, current) {
+            current.width  = current.width*2;
+            current.height = current.height*2;
+        }
+    })
+})
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</html>

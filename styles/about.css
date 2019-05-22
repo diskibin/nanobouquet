@@ -1,0 +1,191 @@
+body {
+font-family: Neucha;
+}
+.about {
+color: #6BFFCA;
+}
+@media (min-width: 767px){
+.item1 { 
+    grid-area: header; 
+    background-color: #282227;
+    padding: 10px 40px;
+}
+.item2 { 
+    grid-area: main; 
+    width: 80%;
+    margin: auto;
+}
+.item3 { 
+    grid-area: about; 
+    width: 80%;
+    margin: 0 5% 0 20%;
+}
+.item4 { 
+    grid-area: addition; 
+    width: 75%;
+    margin: 0 20% 0 5%;
+}
+.grid-container {
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas:
+    'header header'
+    'main main'
+    'about addition';
+grid-gap: 10px;
+}
+.team {
+width: 50%;
+overflow:hidden
+}
+.menu {
+    display: none;
+}
+#myLinks {
+display: inline;
+}
+.photo {
+float:left;
+margin: 0px 30px 20px 0px;
+}
+.phone {
+float: right;  
+}
+}
+
+@media (max-width: 766px){
+.item1 { 
+grid-area: header; 
+background-color: #282227;
+padding: 10px 40px;
+}
+.item2 { 
+grid-area: main; 
+width: 80%;
+margin: auto;
+}
+.item3 { 
+grid-area: about; 
+width: 80%;
+margin: auto;
+}
+.item4 {
+display: none;
+}
+.grid-container {
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas:
+    'header header'
+    'main main'
+    'about about';
+grid-gap: 10px;
+}
+.team {
+width: 100%;
+overflow:hidden
+}
+.menu {
+display: block;
+position: absolute;
+right: 0;
+top: 0; 
+}
+
+#myLinks {
+display: none;
+padding: 10px;
+}
+
+#menunav {
+color: white;
+padding: 0;
+text-decoration: none;
+font-size: 17px;
+display: block;
+text-align: center;
+}
+
+.photo {
+width: 100%;
+margin: 0px 30px 20px 0px;
+}
+}
+
+.commentary {
+    background: #F2F2F2;
+    width: 100%;
+    height: 100%;
+}
+.text {
+    margin: 2%;
+}
+a {
+font-size: 32px;
+line-height: 74px;
+color: #FFFFFF;
+display: inline-block;
+padding: 10px 25px;
+}
+a:hover {
+font-size: 32px;
+line-height: 74px;
+color: #6BFFCA;
+}
+p {
+font-family: Open Sans;
+font-size: 16px;
+line-height: 25px;
+color: #000000;
+}
+.big {
+font-family: Neucha;
+font-size: 26px;
+line-height: 45px;
+}
+.logo {
+padding: 0;
+position: relative;
+top: 5px
+}
+.addition {
+color: #797979;
+}
+input {
+width: 100%;
+border: 1px solid #D96BFF;
+box-sizing: border-box;
+}
+.zv {
+color: #D96BFF;
+}
+.comment {
+width: 100%;
+border: 1px solid #D96BFF;
+box-sizing: border-box;
+}
+.send {
+background: linear-gradient(153.49deg, #55FF9D 0%, #D67FFF 99.98%);
+width: 100%;
+text-align: center;
+border: none;
+font-size: 26px;
+line-height: 40px;
+color: #FFFFFF;
+height: 50px;
+}
+.send:hover {
+background: linear-gradient(0deg, rgba(89, 250, 160, 0.5), rgba(89, 250, 160, 0.5)), linear-gradient(153.49deg, #55FF9D 0%, #D67FFF 99.98%);
+}
+.smallstar {
+position: relative;
+top: -28px;
+left: -30px;
+}
+.bigstar {
+position: relative;
+top: -18px;
+left: -30px;
+}
+
+
